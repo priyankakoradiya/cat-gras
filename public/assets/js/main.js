@@ -20444,6 +20444,11 @@ var App = /*#__PURE__*/function () {
         prevArrow: $(".slider-4-col .slick--prev"),
         nextArrow: $(".slider-4-col .slick--next"),
         responsive: [{
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3
+          }
+        }, {
           breakpoint: 992,
           settings: {
             slidesToShow: 2
@@ -20459,7 +20464,23 @@ var App = /*#__PURE__*/function () {
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: false
+        arrows: false,
+        responsive: [{
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
       });
       $('.logo-slider').slick({
         infinite: true,

@@ -14537,6 +14537,12 @@ button:focus {
   transform: rotate(180deg);
 }
 
+@media (max-width: 991.98px) {
+  .rotate-0 {
+    transform: rotate(0);
+  }
+}
+
 input, textarea {
   outline: none !important;
 }
@@ -14553,6 +14559,7 @@ textarea {
 @media (max-width: 991.98px) {
   .p-initial {
     position: initial !important;
+    transform: translate(0%) !important;
   }
 }
 
@@ -14808,6 +14815,12 @@ textarea {
 
 .fontMMM {
   font-size: 96px;
+}
+
+@media (max-width: 991.98px) {
+  .resfontLL {
+    font-size: 35px;
+  }
 }
 
 .bgprimary {
@@ -15277,9 +15290,21 @@ footer .footer-contact-details {
   padding-bottom: 50px;
   padding-left: 60px;
 }
+@media (max-width: 991.98px) {
+  .product-range .rotate-title {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+}
 .product-range .rotate-title h3, .product-range .rotate-title .h3 {
   padding-right: 50%;
   width: max-content;
+}
+@media (max-width: 991.98px) {
+  .product-range .rotate-title h3, .product-range .rotate-title .h3 {
+    padding-right: 0;
+  }
 }
 
 .customers-review-sec {

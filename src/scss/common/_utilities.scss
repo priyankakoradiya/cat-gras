@@ -116,7 +116,11 @@
     font-size:$fontMMM;
 }
 
-
+.resfontLL{
+    @include media-breakpoint-down(lg) {
+    font-size: $fontLL;
+    }
+  }
 // color
 
 .bgprimary{

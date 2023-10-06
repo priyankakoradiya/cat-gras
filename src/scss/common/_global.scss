@@ -57,6 +57,12 @@ button:focus {
 .rotate-full{
   transform: rotate(180deg);
 }
+
+.rotate-0{
+  @include media-breakpoint-down(lg) {
+    transform: rotate(0);  
+  }
+}
 // INPUT CSS GLOBAL
 input, textarea{
   outline: none !important;
@@ -71,6 +77,8 @@ textarea { resize: none; }
 .p-initial{
   @include media-breakpoint-down(lg) {
   position:initial !important;
+  transform: translate(0%) !important; 
+
   }
 }
 .top-left-center{
